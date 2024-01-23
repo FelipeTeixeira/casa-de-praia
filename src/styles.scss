@@ -12,13 +12,15 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: 60px;
 }
 
 section {
     padding: 32px;
+    background-color: #f7f7f7;
 
     &:nth-child(even) {
-        background-color: #f7f7f7;
+        background-color: #fff;
     }
 
     ul > li {
@@ -31,14 +33,13 @@ section {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 12px;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 16px;
 }
 
 .menu {
@@ -72,8 +73,25 @@ img {
             margin-bottom: 8px;
         }
     }
+
+    img {
+        max-width: 30px;
+        margin-bottom: 8px;
+    }
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    background: none;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 4px 8px;
+    gap: 8px;
 }

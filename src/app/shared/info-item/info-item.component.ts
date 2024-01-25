@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class InfoItemComponent {
     @Input() title!: string;
+    @Input() icon!: string;
 }

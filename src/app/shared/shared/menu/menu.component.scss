@@ -1,0 +1,29 @@
+.menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+}
+
+.container {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+        flex: 1;
+    }
+}
+
+.link {
+    color: #717171;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 4px;
+}

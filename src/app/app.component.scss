@@ -1,47 +1,9 @@
-.faq {
-    background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
+.section {
+    background-color: #f7f7f7;
+    display: block;
+    padding: 32px;
 
-    li {
-        list-style: none;
-        padding: 16px;
-        border-bottom: 1px solid #e5e5e5;
-        margin: 0;
-        display: flex;
-        align-items: center;
-
-        span {
-            margin: auto 0 auto auto;
-        }
-    }
-}
-
-.parabens {
-    text-align: center;
-
-    img {
-        margin: auto auto 16px;
-        display: block;
-        width: 100px;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin-bottom: 8px;
-
-        + h2 {
-            font-size: 18px;
-            font-weight: normal;
-            color: #717171;
-            margin: 0;
-        }
-    }
-}
-
-
-.wifi {
-    button {
-        margin-top: 8px;
+    &:nth-child(even) {
+        background-color: #fff;
     }
 }

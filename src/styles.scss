@@ -1,5 +1,6 @@
 $font: "Inter", sans-serif;
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -58,4 +59,9 @@ button {
     border-radius: 8px;
     padding: 4px 8px;
     gap: 8px;
+    cursor: pointer;
+
+    svg {
+        width: 10px;
+    }
 }

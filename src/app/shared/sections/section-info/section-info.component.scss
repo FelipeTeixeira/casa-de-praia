@@ -3,3 +3,18 @@
         margin-top: 8px;
     }
 }
+
+.alert {
+    position: fixed;
+    inset: 0;
+    top: 16px;
+    bottom: auto;
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    background-color: #3d6bbc;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+
+}

@@ -5,9 +5,11 @@
     color: rgb(113, 113, 113);
 
     ::ng-deep {
-        svg {
-            width: 24px;
-            fill: #3d6bbc;
+        > .icon {
+            svg {
+                width: 24px;
+                fill: #3d6bbc;
+            }
         }
     }
 }
@@ -17,7 +19,6 @@
     display: block;
     margin-top: 4px;
     color: #3d6bbc;
-
 }
 
 p {

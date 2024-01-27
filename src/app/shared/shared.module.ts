@@ -10,6 +10,7 @@ import { InfoItemComponent } from './info-item/info-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IconComponent } from './icon/icon.component';
 import { BypassHtmlSanitizerPipe } from './pipes/bypass-html-sanitizer.pipe';
+import { SectionLocationsComponent } from './sections/section-locations/section-locations.component';
 
 const COMPONENTS = [
     IconComponent,
@@ -19,6 +20,7 @@ const COMPONENTS = [
     SectionInfoComponent,
     SectionFaqComponent,
     SectionCheckInComponent,
+    SectionLocationsComponent,
     //
     MenuComponent,
     InfoItemComponent,

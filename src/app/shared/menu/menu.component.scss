@@ -5,6 +5,11 @@
     background-color: #fff;
     border-top: 1px solid #ebebeb;
     z-index: 1000;
+    transition: padding 0.2s ease;
+
+    @supports (padding: env(safe-area-inset-bottom, 0)) {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
 
     &__item {
         font-size: 10px;
@@ -17,7 +22,9 @@
         gap: 4px;
         border: none;
         width: 100%;
-        transition: color 0.2s ease, font 0.2s ease;
+        transition:
+            color 0.2s ease,
+            font 0.2s ease;
 
         &.active {
             font-weight: bold;

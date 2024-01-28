@@ -1,36 +1,10 @@
 <nav class="menu">
     <ul class="container">
-        <li>
-            <a href="" class="link">
-                <app-icon icon="key"></app-icon>
-                Check-in
-            </a>
-        </li>
-        <li>
-            <a href="" class="link">
-                <app-icon icon="message"></app-icon>
-                Informações
-            </a>
-        </li>
-        <li>
-            <a href="" class="link">
-                <app-icon icon="pool"></app-icon>
-                Piscina
-            </a>
-        </li>
-        <li>
-            <a href="" class="link">
-                <app-icon icon="location"></app-icon>
-                Dicas locais
-            </a>
-        </li>
-        <li>
-            <a href="" class="link">
-                <app-icon icon="faq"></app-icon>
-                Dúvidas
-            </a>
+        <li *ngFor="let menu of menus">
+            <button class="menu__item" (click)="scrollToSection(menu.section)" [class.active]="activeSection === menu.section">
+                <app-icon [icon]="menu.icon"></app-icon>
+                {{menu.name}}
+            </button>
         </li>
     </ul>
 </nav>
-
-<!-- icone do whatsApp flutuante -->

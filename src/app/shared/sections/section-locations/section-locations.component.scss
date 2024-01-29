@@ -13,13 +13,21 @@
         border: none;
         padding-bottom: 0;
     }
+}
 
-    .logo {
-        width: 40px;
-        padding: 4px;
-        background-color: #fff;
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
         border-radius: 8px;
-        margin-top: 4px;
     }
 }
 
@@ -48,11 +56,17 @@
     flex: 1;
 }
 
-button {
+.link {
     color: #fff;
     background-color: #3d6bbc;
     max-width: max-content;
+    text-align: center;
     min-width: 100px;
     font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 8px;
 }
 
+.icon-laughter {
+    margin-left: 4px;
+}

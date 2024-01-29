@@ -3,46 +3,36 @@
         Dicas de locais próximos
     </h2>
 
-    <ul class="teste">
-        <li class="location">
-            <span>
-                <img src="./assets/logos/logo-piratininga.jpeg" alt="Ícone de bem-vindos" class="logo">
+    <ul>
+        <li class="location" *ngFor="let location of locations">
+            <span class="logo">
+                <img *ngIf="location.logo" [src]="'./assets/logos/' + location.logo" [alt]="location.name">
+                <app-icon *ngIf="location.icon" [icon]="location.icon"></app-icon>
             </span>
             <div class="content">
                 <h3 class="title">
-                    Mercado Piratininga
+                    {{location.name}}
                 </h3>
 
                 <p>
-                    Av. José Herculano, 7040 - Travessão
-                    <br />
-                    7 min | 2,7 km
+                    <ng-container *ngIf="location?.address">
+                        {{location.address}}
+                        <br />
+                    </ng-container>
+
+                    {{location.time}}
+
+                    <img *ngIf="!location?.address" src="./assets/laughter.png" alt="Ícone de risada" class="icon-laughter" width="20">
+
+                    <ng-container *ngIf="location.distance">
+                        | {{location.distance}}
+                    </ng-container>
+
                 </p>
 
-                 <button>
+                <a class="link" [href]="location.link" target="_blank" *ngIf="location.link">
                     Ir agora
-                 </button>
-            </div>
-        </li>
-
-        <li class="location">
-            <span>
-                <img src="./assets/logos/logo-piratininga.jpeg" alt="Ícone de bem-vindos" class="logo">
-            </span>
-            <div class="content">
-                <h3 class="title">
-                    Mercado Piratininga
-                </h3>
-
-                <p>
-                    Av. José Herculano, 7040 - Travessão
-                    <br />
-                    7 min | 2,7 km
-                </p>
-
-                 <button>
-                    Ir agora
-                 </button>
+                </a>
             </div>
         </li>
     </ul>

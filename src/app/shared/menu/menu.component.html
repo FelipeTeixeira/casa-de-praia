@@ -1,7 +1,13 @@
 <nav class="menu">
+
+    <a class="button-whatsapp" href="https://wa.me/5512997695607?text=Ol%C3%A1+Felipe%2C+pode+me+ajudar%3F" target="_blank">
+        <app-icon icon="whatsapp"></app-icon>
+    </a>
+
     <ul class="container">
         <li *ngFor="let menu of menus">
-            <button class="menu__item" (click)="scrollToSection(menu.section)" [class.active]="activeSection === menu.section">
+            <button class="menu__item" (click)="scrollToSection(menu.section)"
+                [class.active]="activeSection === menu.section">
                 <app-icon [icon]="menu.icon"></app-icon>
                 {{menu.name}}
             </button>

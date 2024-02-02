@@ -42,3 +42,26 @@
         flex: 1;
     }
 }
+
+::ng-deep {
+    .button-whatsapp {
+        position: fixed;
+        bottom: 72px;
+        width: 34px;
+        height: 34px;
+        right: 20px;
+        background-color: #39df58;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+    }
+}

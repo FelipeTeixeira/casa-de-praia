@@ -49,5 +49,15 @@ export class SectionLocationsComponent {
             logo: 'logo-surfs.jpeg',
             link: 'https://maps.app.goo.gl/SWQwChnReCwjDXTaA',
         },
+        {
+            name: 'Farmácia Farma Ponte',
+            address: 'Av. José Herculano, 5894 - Porto Novo',
+            time: '5 min',
+            distance: '1,7 km',
+            logo: 'logo-farma-ponte.png',
+            link: 'https://maps.app.goo.gl/UYZRq3HqY98TRn3u7',
+        },
+
+        // https://wa.me/5512997695607?text=Ol%C3%A1+Felipe%2C+quero+ligar+a+cascata+ou+hidro
     ];
 }

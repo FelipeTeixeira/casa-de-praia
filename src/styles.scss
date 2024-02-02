@@ -54,16 +54,21 @@ a {
 button {
     font-family: $font;
     background: none;
+    cursor: pointer;
+}
+
+.button {
+    font-size: 14px;
+    color: #222;
     border: 1px solid #ebebeb;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
     padding: 4px 8px;
     gap: 8px;
-    cursor: pointer;
 
     svg {
-        width: 10px;
+        width: 14px;
     }
 }

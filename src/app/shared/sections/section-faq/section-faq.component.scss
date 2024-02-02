@@ -44,6 +44,7 @@
     border-radius: 4px;
     font-size: 14px;
     padding: 16px 8px;
+    margin-bottom: 32px;
 
     &__success {
         background-color: #caf6e2;
@@ -58,5 +59,9 @@
 }
 
 .img {
-    margin-top: 24px;
+    // margin-top: 24px;
+}
+
+.button {
+    width: 100%;
 }

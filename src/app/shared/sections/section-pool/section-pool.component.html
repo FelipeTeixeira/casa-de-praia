@@ -26,9 +26,14 @@
 
         <li>
             <app-info-item title="Cascata e hidromassagem">
-                Caso queira ligar a cascata ou a hidromassagem, entrar em contato com o <strong>Felipe</strong>.
+                Caso queira ligar a cascata ou a hidromassagem,
+                seguir o passo a passo.
             </app-info-item>
-            <!-- TODO - link WHATSAPP pedindo pra ligar cascata -->
+
+            <a class="button" [href]="'#' + sectionIds.FAQ">
+                Visualizar passo a passo
+                <app-icon icon="search"></app-icon>
+            </a>
         </li>
 
         <li>
@@ -41,7 +46,7 @@
 
         <li>
             <app-info-item title="Piscineiro">
-                O piscineiro visita o imóvel regularmente para a
+                O piscineiro (Lucas ou Leonardo) visita o imóvel regularmente para a
                 limpeza da piscina, garantindo um ambiente agradável
                 para todos os hóspedes.
             </app-info-item>

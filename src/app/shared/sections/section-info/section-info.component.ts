@@ -9,15 +9,25 @@ export class SectionInfoComponent {
     password = 'fernandocarros';
     showMessage = false;
 
-    async copy() {
-        try {
-            this.showMessage = true;
-            await navigator.clipboard.writeText(this.password);
-            setTimeout(() => {
-                this.showMessage = false;
-            }, 2000);
-        } catch (err) {
-            console.error('Erro ao copiar texto:', err);
-        }
+    copy() {
+        // Cria um elemento de input temporário
+        const inputElement = document.createElement('input');
+        inputElement.value = this.password;
+
+        // Adiciona o elemento ao DOM
+        document.body.appendChild(inputElement);
+
+        // Seleciona o texto no campo de input
+        inputElement.select();
+
+        this.showMessage = true;
+        document.execCommand('copy');
+
+        // Remove o elemento de input temporário
+        document.body.removeChild(inputElement);
+
+        setTimeout(() => {
+            this.showMessage = false;
+        }, 2000);
     }
 }

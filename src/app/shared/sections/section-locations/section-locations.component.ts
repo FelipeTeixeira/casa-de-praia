@@ -9,7 +9,7 @@ export class SectionLocationsComponent {
     locations = [
         {
             name: 'Mercearia do Goiano',
-            time: 'Fica na vizinhança, bem pertinho de casa.',
+            time: 'A apenas alguns passos, basta sair da casa e virar à esquerda!',
             icon: 'market',
         },
         {
@@ -38,7 +38,7 @@ export class SectionLocationsComponent {
         },
         {
             name: 'Pizzaria Lunamar',
-            time: 'Fica na vizinhança, bem pertinho de casa.',
+            time: 'A apenas alguns passos, basta sair da casa e virar à esquerda!',
             logo: 'logo-lunamar.jpeg',
         },
         {

@@ -4,61 +4,88 @@
     </h2>
 
     <ul class="faq">
-        <li>
-            Como ligar a cascata?
+        <li class="item" [ngClass]="{ 'active': faqActive === 'cascata' }">
+            <div class="header" (click)="toogleFaq('cascata')">
+                Como ligar a cascata?
+                <app-icon icon="arrow-bottom"></app-icon>
+            </div>
 
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
-        <li>
-            Como ligar a hidromassagem?
+            <div class="body">
+                <div class="content">
+                    <div class="alert">
+                        <app-icon icon="warning"></app-icon>
+                        <p>
+                            Caso a <strong>hidro</strong> esteja ligado,
+                            <br>
+                            pedir para <strong>desligar</strong>.
+                        </p>
+                    </div>
 
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
+                    <img src="./assets/faq/ligar-cascata.jpg" class="img">
 
-        <li>
-            Casa tem toalhas?
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
+                    <ul class="steps">
+                        <li>1- <strong>Fechar</strong> registro retorno.</li>
+                        <li>2- <strong>Abrir</strong> registro cascata.</li>
+                        <li>3- <strong>Fechar</strong> registro hidro.</li>
+                        <li>4- Posicionar para posição<strong>recircular</strong>.</li>
+                    </ul>
 
-    </ul>
-
-
-    <ul class="faq">
-        <li>
-            Como ligar a cascata?
-
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
-        <li>
-            Como ligar a hidromassagem?
-
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
-
-        <li>
-            Casa tem toalhas?
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
-
-    </ul>
-
-
-    <ul class="faq">
-        <li>
-            Como ligar a cascata?
-
-            <app-icon icon="arrow-bottom"></app-icon>
-        </li>
-        <li>
-            Como ligar a hidromassagem?
-
-            <app-icon icon="arrow-bottom"></app-icon>
+                    <div class="alert alert__success">
+                        <app-icon icon="check"></app-icon>
+                        <p>
+                            <strong>Parabéns</strong>, agora solicite para o Felipe ligar a cascata
+                        </p>
+                    </div>
+                </div>
+            </div>
         </li>
 
-        <li>
-            Casa tem toalhas?
-            <app-icon icon="arrow-bottom"></app-icon>
+
+
+
+        <li class="item" [ngClass]="{ 'active': faqActive === 'hidro' }">
+            <div class="header" (click)="toogleFaq('hidro')">
+                Como ligar a hidro?
+                <app-icon icon="arrow-bottom"></app-icon>
+            </div>
+
+            <div class="body">
+                <div class="content">
+                    <div class="alert">
+                        <app-icon icon="warning"></app-icon>
+                        <p>
+                            Caso a <strong>cascata</strong> esteja ligada,
+                            <br>
+                            pedir para <strong>desligar</strong>.
+                        </p>
+                    </div>
+
+                    <img src="./assets/faq/ligar-hidro.jpg" class="img">
+
+                    <ul class="steps">
+                        <li>1- <strong>Fechar</strong> registro retorno.</li>
+                        <li>2- <strong>Fechar</strong> registro cascata.</li>
+                        <li>3- <strong>Abrir</strong> registro hidro.</li>
+                        <li>4- Posicionar para posição <strong>filtrar</strong>.</li>
+                    </ul>
+
+                    <div class="alert alert__success">
+                        <app-icon icon="check"></app-icon>
+                        <p>
+                            <strong>Parabéns</strong>, agora solicite para o Felipe ligar a hidro
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </li>
+
+        <!-- <li class="item">
+            <div class="header">
+                Casa tem toalhas?
+                <app-icon icon="arrow-bottom"></app-icon>
+            </div>
+        </li> -->
 
     </ul>
 </section>

@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-faq.component.scss']
 })
 export class SectionFaqComponent {
+    faqActive: 'cascata' | 'hidro' | undefined;
 
+
+    toogleFaq(faq: 'cascata' | 'hidro' | undefined): void {
+
+        if (faq === this.faqActive) {
+            this.faqActive = undefined;
+            return;
+        }
+
+        this.faqActive = faq;
+    }
 }

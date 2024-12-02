@@ -12,6 +12,10 @@
 
             <div class="body">
                 <div class="content">
+
+
+                    <img src="./assets/faq/bomba-piscina.jpg" class="img">
+
                     <div class="alert">
                         <app-icon icon="warning"></app-icon>
                         <p>
@@ -21,19 +25,17 @@
                         </p>
                     </div>
 
-                    <img src="./assets/faq/ligar-cascata.jpg" class="img">
-
                     <ul class="steps">
                         <li>1- <strong>Fechar</strong> registro retorno.</li>
                         <li>2- <strong>Abrir</strong> registro cascata.</li>
                         <li>3- <strong>Fechar</strong> registro hidro.</li>
-                        <li>4- Posicionar para posição<strong>recircular</strong>.</li>
                     </ul>
 
-                    <div class="alert alert__success">
+                    <div class="sucesso">
                         <app-icon icon="check"></app-icon>
                         <p>
-                            <strong>Parabéns</strong>, agora entre em contato para ligar a cascata
+                            <strong>Parabéns</strong>
+                            <br> Entre em contato para ligar a cascata.
                         </p>
                     </div>
 
@@ -48,8 +50,6 @@
         </li>
 
 
-
-
         <li class="item" [ngClass]="{ 'active': faqActive === 'hidro' }">
             <div class="header" (click)="toogleFaq('hidro')">
                 Como ligar a hidro?
@@ -58,6 +58,8 @@
 
             <div class="body">
                 <div class="content">
+                    <img src="./assets/faq/bomba-piscina.jpg" class="img">
+
                     <div class="alert">
                         <app-icon icon="warning"></app-icon>
                         <p>
@@ -67,19 +69,17 @@
                         </p>
                     </div>
 
-                    <img src="./assets/faq/ligar-hidro.jpg" class="img">
-
                     <ul class="steps">
                         <li>1- <strong>Fechar</strong> registro retorno.</li>
                         <li>2- <strong>Fechar</strong> registro cascata.</li>
                         <li>3- <strong>Abrir</strong> registro hidro.</li>
-                        <li>4- Posicionar para posição <strong>filtrar</strong>.</li>
                     </ul>
 
-                    <div class="alert alert__success">
+                    <div class="sucesso">
                         <app-icon icon="check"></app-icon>
                         <p>
-                            <strong>Parabéns</strong>, agora entre em contato para ligar a hidro
+                            <strong>Parabéns</strong>
+                            <br> Entre em contato para ligar a hidro.
                         </p>
                     </div>
 
